@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="play-pause">
+            <!-- <img id="play-btn" src="https://img.icons8.com/ios/512/play-button-circled.png" alt="play">
+            <img id="pause-btn" src="https://img.icons8.com/ios/512/circled-pause.png" alt="pause"
+                style="display: none;"> -->
+            <img class="video_play_btn" id="play1" src="https://img.icons8.com/ios/512/play-button-circled.png"
+                alt="play-btn" style="display: block;">
+
+            <img class="video_play_btn" id="pause1" src="https://img.icons8.com/ios/512/circled-pause.png"
+                alt="pause-btn" style="display: none;">
+
+        </div>
+        <div class="wrapper">
+            <div id="videoplayer-wrapper">
+                <video id="video" autoplay=true loop width="640" height="340" src="./video/big_buck_bunny.mp4">
+                </video>
+                <div id="controls-tool" class="controls-tool">
+                    <div id="progress">
+                        <progress id="progressBar" role="progressbar" min="0" max="100" value="0"></progress>
+                    </div>
+                    <div class="player-controls">
+                        <div class="left">
+                            <div class="play-pause-btn">
+                                <div><img class="space" id="play"
+                                        src="https://img.icons8.com/ios/512/play-button-circled.png" alt="play-btn"
+                                        style="display: block;">
+                                </div>
+                                <div><img class="space" id="pause"
+                                        src="https://img.icons8.com/ios/512/circled-pause.png" alt="pause-btn"
+                                        style="display: none;">
+                                </div>
+                            </div>
+                            <div class="volume">
+                                <img class="space" id="vol-high" src="https://img.icons8.com/ios/512/high-volume.png"
+                                    alt="volume">
+                                <img class="space" id="vol-low" src="https://img.icons8.com/ios/512/low-volume.png"
+                                    alt="volume" style="display: none;">
+
+                                <div class="volumeBar">
+                                    <input id="vol-ctrl" type="range" min="0" max="1" step="0.01" value="1">
+                                </div>
+                            </div>
+                            <div class="time">
+                                <time id="time-elapsed">00:00</time>
+                                <span> / </span>
+                                <time id="duration">00:00</time>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div id="settings">
+                                <img class="space" src="https://cdn-icons-png.flaticon.com/512/3019/3019014.png"
+                                    alt="settings">
+                                <div class="settings-tool">
+                                    <div class="speed">
+                                        <div id="faster" onclick="playfaster()">2x</div>
+                                        <div id="fast" onclick="playfast()">1.5x</div>
+                                        <div id="normal" onclick="playnormal()">Normal</div>
+                                        <div id="slow" onclick="playslow()">0.75x</div>
+                                        <div id="slower" onclick="playslower()">0.5x</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="pip">
+                                <img src="https://img.icons8.com/ios/2x/picture-in-picture.png" width="40" height="40"
+                                    alt="">
+                            </div>
+                            <div id="fullscreen-button">
+                                <img src="https://cdn-icons-png.flaticon.com/512/4823/4823555.png"
+                                    alt="fullscreen-button" width="40" height="40">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script>
+        // let play = document.getElementById('play');
+        // let pause = document.getElementById('pause');
+
+        // play.addEventListener('click', handlePlayBtn);
+        // function handlePlayBtn() {
+        //     alert();
+        // }
+    </script>
+</body>
+
+</html>
